@@ -1,0 +1,23 @@
+body {
+  font-family: "Trebuchet MS", Arial;
+  font-size: 20px;
+  color: white;
+  background-color: #555555;
+}
+
+.quote-box {
+  border: 2px dashed darkgray;
+  padding: 20px;
+}
+
+.vcenter {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+}
+
+.hcenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}

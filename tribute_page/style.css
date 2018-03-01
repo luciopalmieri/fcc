@@ -1,0 +1,16 @@
+body {
+  font-family: "Trebuchet MS";
+}
+
+.mrg-bottom {
+  margin-bottom: 20px;
+}
+
+.bq {
+  padding: 30px 5px 10px 10px;
+}
+
+details {
+  background-color: lightgray;
+  padding: 10px 10px 30px 10px;
+}

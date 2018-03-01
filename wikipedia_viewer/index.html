@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wikipedia Viewer</title>
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="hcenter vcenter">
+
+    <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Get a random Wikipedia article</a>
+    <form action="">
+      <input id="text-to-search" type="text" name="text-to-search" value="">
+      <input type="submit" value="Search" class="btn btn-primary">
+    </form>
+
+    <ul id="#result-list">
+
+    </ul>
+
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/434915e07f.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

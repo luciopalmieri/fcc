@@ -1,0 +1,70 @@
+body {
+  font-family: "Trebuchet MS", Arial;
+  font-size: 20px;
+  color: white;
+  background-color: #555555;
+}
+
+a {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Header */
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 10;
+  padding: 0px 0px 0px 0px;
+  background-color: #2A3132;
+}
+
+/* Main */
+.line-separator {
+  border: solid 3px;
+  border-radius: 25px;
+  width: 70%;
+  margin: 30px auto 40px auto;
+}
+
+.img-profile {
+  margin: auto;
+}
+
+#fullpage {
+  position: absolute;
+  top: 60px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  margin: 5%;
+}
+
+.thumbs img {
+  margin: 6px;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0px;
+  right: 10px;
+  z-index: 10;
+  width: 200px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.social i {
+  margin-right: 6px;
+}
+
+.copyright {
+}
