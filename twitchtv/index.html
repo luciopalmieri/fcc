@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Random Quote Machine</title>
+  <title>Twitch Streamers</title>
 
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,14 +10,17 @@
 <body>
 
 <div class="container">
-  <div class="quote-box text-center hcenter vcenter">
-    <blockquote>
-      <p><i class="fa fa-quote-left"></i><em> <span id="quote-text"></span></em></p>
-      <footer id="quote-author"></footer>
-    </blockquote>
+  <div class="hcenter vcenter">
 
-    <button id="tweet-quote" type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
-    <button id="new-quote" type="button" class="btn btn-primary">New quote</button>
+    <div class="btn-group">
+      <button id="all" type="button" class="btn btn-primary filter-button">All</button>
+      <button id="online" type="button" class="btn btn-primary filter-button">Online</button>
+      <button id="offline" type="button" class="btn btn-primary filter-button">Offline</button>
+    </div>
+
+    <ul id="#result-list">
+    </ul>
+
   </div>
 </div>
 
