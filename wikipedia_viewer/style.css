@@ -17,7 +17,6 @@ a:visited {
   color: #0D0C7D;
 }
 
-a:hover {
+a:hover, #search {
   cursor: pointer;
 }
-
