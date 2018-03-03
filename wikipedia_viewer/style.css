@@ -2,17 +2,22 @@ body {
   font-family: "Trebuchet MS", Arial;
   font-size: 20px;
   color: black;
-  background-color: #555555;
+  background-color: #F6F6F6;
 }
 
-.vcenter {
-  position: absolute;
-  top: 20%;
-  transform: translateY(-50%);
+#search {
+  color: #2F49AA;
 }
 
-.hcenter {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+a:link {
+  color: #2F49AA;
 }
+
+a:visited {
+  color: #0D0C7D;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
