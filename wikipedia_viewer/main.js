@@ -3,6 +3,21 @@ $(document).ready(function() {
   $('#search').click(submit_search);
   $('form').submit(submit_search);
 
+  $('#clear').hide();
+  $('#text-to-search').on('input propertychange', function() {
+    var $this = $(this);
+    var visible = Boolean($this.val());
+    if (visible) {
+      $('#clear').show();
+    } else {
+      $('#clear').hide();
+    }
+  }).trigger('propertychange');
+
+  $('#clear').click(function() {
+    $('#result-list').empty();
+    $('#text-to-search').val('').trigger('propertychange').focus();
+  });
 });
 
 function submit_search(e) {

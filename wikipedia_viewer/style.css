@@ -17,6 +17,11 @@ a:visited {
   color: #0D0C7D;
 }
 
-a:hover, #search {
+a:hover, #search, #clear {
   cursor: pointer;
+}
+
+/* hide native clear button */
+::-ms-clear {
+  display: none;
 }
