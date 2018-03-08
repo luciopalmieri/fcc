@@ -5,6 +5,10 @@ body {
   background-color: #F6F6F6;
 }
 
+#clear {
+  background-color: white;
+}
+
 #search {
   color: #2F49AA;
 }
