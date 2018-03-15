@@ -5,6 +5,11 @@ body {
   background-color: #F6F6F6;
 }
 
+.bg-header {
+  background-color: #E0EEF7;
+  color: #0F48AA;
+}
+
 #clear {
   background-color: white;
 }

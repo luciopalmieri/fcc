@@ -24,7 +24,7 @@ function selectFilter(filter) {
 }
 
 function showChannels(filter) {
-  $('ul').empty();
+  $('#result-list').empty();
   fcc_channel_ids.forEach(function (channel_id) {
     showChannel(channel_id, filter);
   });
@@ -43,20 +43,30 @@ function showChannel(channel_id, filter) {
       var stream_data = data;
       var name = channel_data.display_name;
       var link = channel_data.url;
-      var game = channel_data.game;
+      var game = channel_data.game ? channel_data.game : '';
       var status = truncate(channel_data.status, 50);
 
       var show_online = (filter == 'all' || filter == 'online');
       var show_offline = (filter == 'all' || filter == 'offline');
 
       var is_online = (stream_data.stream !== null);
-      var online_icon = "";
+      var game_icon = '<i class="fa fa-gamepad"></i>';
+      var online_icon = '<i class="fa fa-circle" style="color: orangered;"></i>';
       if (is_online) {
-        online_icon = '<i class="fa fa-circle"></i>';
+        online_icon = '<i class="fa fa-circle" style="color: lightgreen;"></i>';
       }
 
       if ((is_online && show_online) || (!is_online && show_offline)) {
-        $('ul').append('<li>' + online_icon + ' <a href=' + link + ' target="_blank">' + name + '</a></li>' + game + ": " + status);
+        var listItem =
+          '<a href="' + link + '" target="_blank" class="list-group-item list-group-item-action flex-column align-items-start">\n' +
+          '  <div class=\"d-flex w-100 justify-content-between\">\n' +
+          '    <h5 class=\"mb-1\">' + online_icon + ' ' + name + '</h5>\n' +
+          '  </div>\n' +
+          '  <p class=\"mb-1\">' + game_icon + ' ' + game + '</p>\n' +
+          '  <p class=\"mb-1\">' + status + '</p>\n' +
+          '</a>';
+
+        $('#result-list').append(listItem);
       }
 
       console.log('CHANNELL ' + channel_id + ": ");
