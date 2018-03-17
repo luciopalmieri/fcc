@@ -17,7 +17,11 @@ page.open(address, function(status) {
       return document.title;
     });
 
-    var filename = (title || 'screenshot').toLowerCase().replace(/\s/g, '_') + '.jpg'
+    var filename = (title || 'screenshot').toLowerCase().replace(/\s/g, '_') + '.jpg';
+
+    var pageWidth = 800;
+    var pageHeight = pageWidth * 3/4;
+    page.viewportSize = { width: pageWidth, height: pageHeight };
     page.render(filename);
   }
   phantom.exit();
