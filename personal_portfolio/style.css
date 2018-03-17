@@ -11,6 +11,10 @@ a {
   margin-top: 10px;
 }
 
+.img-thumbnail {
+  width: 384px;
+}
+
 /* Header */
 .navbar {
   position: fixed;
