@@ -9,7 +9,10 @@
 
   <title>Local Weather</title>
 </head>
+
 <body>
+
+<script defer src="https://use.fontawesome.com/434915e07f.js"></script>
 
 <div class="container">
   <div class="d-flex bg-header p-2">Local Weather</div>
@@ -17,12 +20,17 @@
   <div class="row mt-2 justify-content-end">
     <div class="col-4">
       <div class="m-2">
-        <button id="update-weather" type="button" class="btn btn-primary">Refresh</button>
+        <button id="update-weather" type="button" class="btn btn-primary" style="display: none;">Refresh</button>
       </div>
     </div>
   </div>
 
-  <div class="container weather-box text-center">
+  <div class="container text-center">
+    <button id="get-position" type="button" class="btn btn-primary"><i class="fa fa-location-arrow"></i> Find Me</button>
+    <i id="spinner" class="fa fa-spinner fa-spin" style="display: none;font-size:48px;color:#F4F4F4"></i>
+  </div>
+
+  <div class="container weather-box text-center" style="display: none;">
     <div>
       <p id="location-text">...</p>
       <p><span id="temperature">...</span> °<a id="temp_um"></a></p>
@@ -32,7 +40,6 @@
   </div>
 </div>
 
-<script defer src="https://use.fontawesome.com/434915e07f.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

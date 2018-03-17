@@ -7,19 +7,25 @@ $(document).ready(function() {
     showLocalWeather();
   });
 
+  $('#get-position').on('click', function (e) {
+    e.preventDefault();
+    showLocalWeather();
+  });
+
   $('#temp_um').on('click', function (e) {
     e.preventDefault();
     toggleTempUm();
   });
-
-  showLocalWeather();
 });
 
 function showLocalWeather() {
   if (navigator.geolocation) {
+    $('.weather-box').hide();
+    $('#get-position').hide();
+    $('#spinner').show();
     navigator.geolocation.getCurrentPosition(showLocalWeatherByPosition);
   } else {
-    // "Geolocation is not supported by this browser."
+    alert("Geo-location is not supported by this browser!")
   }
 
 }
@@ -39,6 +45,9 @@ function showLocalWeatherByPosition(position) {
     $('#weather-text').text(weatherDescription);
     $('#weather-status-icon').attr('src', weatherStatusIcon);
 
+    $('#spinner').hide();
+    $('#update-weather').show();
+    $('.weather-box').show();
   });
 }
 
