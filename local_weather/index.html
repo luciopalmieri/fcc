@@ -2,29 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wikipedia viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Local Weather</title>
 </head>
 <body>
 
 <div class="container">
-  <div class="weather-box text-center hcenter vcenter">
+  <div class="d-flex bg-header p-2">Local Weather</div>
 
+  <div class="row mt-2 justify-content-end">
+    <div class="col-4">
+      <div class="m-2">
+        <button id="update-weather" type="button" class="btn btn-primary">Refresh</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container weather-box text-center">
     <div>
       <p id="location-text">...</p>
       <p><span id="temperature">...</span> °<a id="temp_um"></a></p>
       <p id="weather-text">...</p>
       <img id="weather-status-icon" src="">
     </div>
-
-    <button id="update-weather" type="button" class="btn btn-primary">Refresh</button>
   </div>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script defer src="https://use.fontawesome.com/434915e07f.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 </body>
 </html>

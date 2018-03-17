@@ -5,19 +5,13 @@ body {
   background-color: #555555;
 }
 
+.bg-header {
+  background-color: #29A0EB;
+  color: #F4F4F4;
+}
+
 .weather-box {
   border: 2px solid darkgray;
   padding: 20px;
 }
 
-.vcenter {
-  position: absolute;
-  top: 20%;
-  transform: translateY(-50%);
-}
-
-.hcenter {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
