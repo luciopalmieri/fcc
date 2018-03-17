@@ -20,8 +20,14 @@ page.open(address, function(status) {
     var filename = (title || 'screenshot').toLowerCase().replace(/\s/g, '_') + '.jpg';
 
     var pageWidth = 800;
-    var pageHeight = pageWidth * 3/4;
+    var pageHeight = pageWidth * 10/16;
     page.viewportSize = { width: pageWidth, height: pageHeight };
+    page.clipRect = {
+      top: 0,
+      left: 0,
+      width: pageWidth,
+      height: pageWidth * 10/16
+    };
     page.render(filename);
   }
   phantom.exit();
