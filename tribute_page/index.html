@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Ip Man Tribute Page</title>
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
 
-<div class="container-fluid">
-  <div class="jumbotron">
-    <h1 class="text-center text-primary mrg-bottom">Ip Man</h1>
-    <p class="text-center  mrg-bottom"><em><strong>He was a master teacher of Wing Chun. His most famous student was Bruce Lee</strong></em></p>
-    <div class="row photo">
-      <div class="col-sm-5">
-        <figure>
-          <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/3/37/The_age_of_18_Bruce_Lee_and_Ye_Wen.jpg" alt="Ip Man and Bruce Lee.">
-          <figcaption>Ip Man and Bruce Lee.</figcaption>
-        </figure>
-      </div>
-      <div class="col-sm-7">
-        <blockquote class="bq">
-          <p><em>"We all have inner demons to fight, we call these demons, fear and hatred and anger. If you do not conquer them then a life of one hundred years is a tragedy. If you do, then a life of a single day can be a triumph."</em></p>
-          <footer>Ip Man</footer>
-        </blockquote>
-      </div>
-    </div>
-    <details class="mrg-bottom">
+<header>
+  <h1 id="title" class="center-text">Ip Man</h1>
+</header>
+
+<main id="main">
+  <p class="center-text"><em><strong>He was a master teacher of Wing Chun. His most famous student was Bruce Lee.</strong></em></p>
+
+  <div id="img-div">
+    <figure>
+      <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/3/37/The_age_of_18_Bruce_Lee_and_Ye_Wen.jpg" alt="Ip Man and Bruce Lee.">
+      <figcaption id="img-caption" class="center-text">Ip Man and Bruce Lee.</figcaption>
+    </figure>
+  </div>
+
+  <div id="tribute-info">
+    <blockquote>
+      <p><em>"We all have inner demons to fight, we call these demons, fear and hatred and anger. If you do not conquer them then a life of one hundred years is a tragedy. If you do, then a life of a single day can be a triumph."</em></p>
+      <footer>Ip Man</footer>
+    </blockquote>
+
+    <details>
       <summary>Martial arts lineage</summary>
       <ol>
         <li><strong>Ng Mui</strong> (one of the Five Elders of Shaolin Monastery)</li>
@@ -40,16 +43,19 @@
         <li><strong>Yip Man</strong> (also learned from Wu Chung-sok, Leung Bik)</li>
       </ol>
     </details>
-    <div class="text-center">
-      <p class="more-info">For more information, see the <a target="_blank" href="https://en.wikipedia.org/wiki/Ip_Man">Wikipedia page</a></p>
+
+    <div>
+      <p class="center-text">For more information, see the <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Ip_Man">Wikipedia page</a></p>
     </div>
   </div>
-  <footer>
-    <div class="text-center">
-      <p>&copy; 2017 <a target="_blank" href="https://www.freecodecamp.org/luciopalmieri">Lucio Palmieri</a></p>
-    </div>
-  </footer>
-</div>
+</main>
+
+<footer class="center-text">
+  <p>&copy; 2017 <a target="_blank" href="https://www.freecodecamp.org/luciopalmieri">Lucio Palmieri</a></p>
+</footer>
+
+<!-- CDN Link: Freecodecamp Test Environment -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 </body>
 </html>

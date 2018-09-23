@@ -1,16 +1,39 @@
+.center-text {
+  text-align: center;
+}
+
 body {
-  font-family: "Trebuchet MS";
+  font-family: "Trebuchet MS", sans-serif;
+  margin: 1vh 1vw;
 }
 
-.mrg-bottom {
-  margin-bottom: 20px;
+#title {
+  background-color: lightgrey;
+  border-radius: 8px 8px 0px 0px;
+  padding: 0.3em;
+  margin-bottom: 0px;
 }
 
-.bq {
-  padding: 30px 5px 10px 10px;
+#main {
+  background-color: #EEE;
+  border-radius: 0px 0px 8px 8px;
+  padding: 1vh 3vw;
+}
+
+#img-div {
+  padding: 1em;
+}
+
+#image {
+  background-color: lightgray;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto
 }
 
 details {
   background-color: lightgray;
+  border-radius: 8px;
   padding: 10px 10px 30px 10px;
 }
