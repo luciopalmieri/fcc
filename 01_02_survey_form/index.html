@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1 id="title">Hotel Survey Form</h1>
+</header>
+
+<main>
+  <p id="description">Let us know how we can improve our services</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" required placeholder="Enter your name">
+    <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" required placeholder="Enter your email">
+    <label id="number-label" for="number">Age</label>
+    <input id="number" type="number" min="14" max="90" placeholder="Age">
+
+    <label id="dropdown-label" for="dropdown">How friendly were the hotel staff members?</label>
+    <select id="dropdown" type="list">
+      <option>Extremely friendly</option>
+      <option>Quite friendly</option>
+      <option>Not at all friendly</option>
+    </select>
+
+    <fieldset id="radio-quick-check-in">
+      <legend>How quick was the check-in process?</legend>
+      <label for="extremely-quick-check-in">Extremely friendly</label>
+      <input id="extremely-quick-check-in" type="radio" name="quick-check-in" value="extremely-quick-check-in">
+      <label for="quite-quick-check-in">Quite friendly</label>
+      <input id="quite-quick-check-in" type="radio" name="quick-check-in" value="quite-quick-check-in">
+      <label for="not-at-all-quick-check-in">Not at all friendly</label>
+      <input id="not-at-all-quick-check-in" type="radio" name="quick-check-in" value="not-at-all-quick-check-in">
+    </fieldset>
+
+    <fieldset id="checkbox-favorite-food">
+      <legend>What is your favorite food?</legend>
+        <label for="pizza-favorite-food">Pizza</label>
+        <input id="pizza-favorite-food" type="checkbox" name="favorite-food" value="pizza-favorite-food">
+        <label for="pasta-favorite-food">Pasta</label>
+        <input id="pasta-favorite-food" type="checkbox" name="favorite-food" value="pasta-favorite-food">
+        <label for="fish-favorite-food">Fish</label>
+        <input id="fish-favorite-food" type="checkbox" name="favorite-food" value="fish-favorite-food">
+        <label for="beef-favorite-food">Beef</label>
+        <input id="beef-favorite-food" type="checkbox" name="favorite-food" value="beef-favorite-food">
+        <label for="cheese-favorite-food">Cheese</label>
+        <input id="cheese-favorite-food" type="checkbox" name="favorite-food" value="cheese-favorite-food">
+    </fieldset>
+
+    <label for="suggestions">Any Comments or Suggestions?</label>
+    <textarea id="suggestions" rows="10" cols="50"></textarea>
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</main>
+
+<footer class="center-text">
+    <p>&copy; 2017 <a target="_blank" href="https://www.freecodecamp.org/luciopalmieri">Lucio Palmieri</a></p>
+</footer>
+
+<!-- CDN Link: Freecodecamp Test Environment -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
