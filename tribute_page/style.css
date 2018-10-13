@@ -7,6 +7,10 @@ body {
   margin: 1vh 1vw;
 }
 
+h1 {
+  font-size: 8vw;
+}
+
 #title {
   background-color: lightgrey;
   border-radius: 8px 8px 0px 0px;
