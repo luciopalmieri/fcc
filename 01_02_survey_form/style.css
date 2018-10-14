@@ -1,12 +1,74 @@
+.body-container {
+  /*
+    Compound Color Scheme (Split Complementary)
+  */
+  --green-light: #F0F7D4;
+  --green-dark:  #B2D732;
+  --red:         #9D0E01;
+  --blue-light:  #347B98;
+  --blue-dark:   #092834;
+}
+
+.center-text {
+  text-align: center;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  background-color: var(--green-dark, white);
+  margin: 1vh 1vw;
+}
+
+#title {
+  background-color: var(--green-light, white);
+  color: var(--red, black);
+  margin-bottom: 0px;
+  padding: 1vh 0;
+}
+
+#description {
+  margin-top: 0px;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+main {
+  background-color: var(--green-light, white);
+  padding: 0 3vw;
+}
+
 #survey-form {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 3px;
 }
 
-@media screen and (min-width: 480px) {
+#submit-row {
+  grid-column: 1 / -1;
+  justify-self: center;
+  padding: 1vh 0;
+}
+
+#submit {
+  background-color: var(--red, black);
+  color: var(--green-light, white);
+  padding: 2vh 3vw;
+}
+
+footer {
+  background-color: var(--blue-dark, darkblue);
+  color: var(--green-dark, lightgreen);
+  margin-top: 0px;
+  padding: 1vh 0;
+}
+
+footer a {
+  color: var(--green-dark, lightgreen);
+}
+
+@media screen and (max-width: 480px) {
   #survey-form {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }

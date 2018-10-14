@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey Form</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
+<body class="body-container">
 
 <header>
-    <h1 id="title">Hotel Survey Form</h1>
+    <h1 id="title" class="center-text">Hotel Survey Form</h1>
 </header>
 
 <main>
-  <p id="description">Let us know how we can improve our services</p>
+  <p id="description" class="center-text">Let us know how we can improve our services</p>
 
   <form id="survey-form">
     <label id="name-label" for="name">* Name</label>
@@ -61,7 +62,9 @@
     <label for="suggestions">Any Comments or Suggestions?</label>
     <textarea id="suggestions" rows="10" cols="50"></textarea>
 
-    <button id="submit" type="submit">Submit</button>
+    <div id="submit-row">
+      <button id="submit" type="submit">Submit</button>
+    </div>
   </form>
 </main>
 
