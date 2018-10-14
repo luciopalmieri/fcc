@@ -18,12 +18,12 @@
   <p id="description">Let us know how we can improve our services</p>
 
   <form id="survey-form">
-    <label id="name-label" for="name">Name</label>
+    <label id="name-label" for="name">* Name</label>
     <input id="name" type="text" required placeholder="Enter your name">
-    <label id="email-label" for="email">Email</label>
+    <label id="email-label" for="email">* Email</label>
     <input id="email" type="email" required placeholder="Enter your email">
-    <label id="number-label" for="number">Age</label>
-    <input id="number" type="number" min="14" max="90" placeholder="Age">
+    <label id="number-label" for="number">* Age</label>
+    <input id="number" type="number" required min="14" max="90" placeholder="Age">
 
     <label id="dropdown-label" for="dropdown">How friendly were the hotel staff members?</label>
     <select id="dropdown" type="list">
@@ -32,18 +32,20 @@
       <option>Not at all friendly</option>
     </select>
 
+    <label for="radio-quick-check-in">How quick was the check-in process?</label>
     <fieldset id="radio-quick-check-in">
-      <legend>How quick was the check-in process?</legend>
-      <label for="extremely-quick-check-in">Extremely friendly</label>
+      <legend>Quickness level</legend>
+      <label for="extremely-quick-check-in">Extremely quick</label>
       <input id="extremely-quick-check-in" type="radio" name="quick-check-in" value="extremely-quick-check-in">
-      <label for="quite-quick-check-in">Quite friendly</label>
+      <label for="quite-quick-check-in">Quite quick</label>
       <input id="quite-quick-check-in" type="radio" name="quick-check-in" value="quite-quick-check-in">
-      <label for="not-at-all-quick-check-in">Not at all friendly</label>
+      <label for="not-at-all-quick-check-in">Not at all quick</label>
       <input id="not-at-all-quick-check-in" type="radio" name="quick-check-in" value="not-at-all-quick-check-in">
     </fieldset>
 
+    <label for="checkbox-favorite-food">What is your favorite food?</label>
     <fieldset id="checkbox-favorite-food">
-      <legend>What is your favorite food?</legend>
+      <legend>Favorite food?</legend>
         <label for="pizza-favorite-food">Pizza</label>
         <input id="pizza-favorite-food" type="checkbox" name="favorite-food" value="pizza-favorite-food">
         <label for="pasta-favorite-food">Pasta</label>

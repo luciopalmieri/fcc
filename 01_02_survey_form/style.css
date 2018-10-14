@@ -1,0 +1,11 @@
+#survey-form {
+  display: grid;
+  grid-gap: 3px;
+}
+
+@media screen and (min-width: 480px) {
+  #survey-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
