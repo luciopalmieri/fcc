@@ -12,14 +12,17 @@ h1 {
 }
 
 #title {
-  background-color: lightgrey;
   border-radius: 8px 8px 0px 0px;
   padding: 0.3em;
   margin-bottom: 0px;
 }
 
+.bg-dark-color {
+  background-color: hsl(49, 34%, 81%);
+}
+
 #main {
-  background-color: #EEE;
+  background-color: hsl(49, 24%, 91%);
   border-radius: 0px 0px 8px 8px;
   padding: 1vh 3vw;
 }
@@ -29,7 +32,6 @@ h1 {
 }
 
 #image {
-  background-color: lightgray;
   display: block;
   max-width: 100%;
   height: auto;
@@ -37,7 +39,6 @@ h1 {
 }
 
 details {
-  background-color: lightgray;
   border-radius: 8px;
   padding: 10px 10px 30px 10px;
 }
