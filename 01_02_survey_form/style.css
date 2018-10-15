@@ -97,6 +97,7 @@ footer a {
   label {
     justify-self: start;
     margin-top: 2vh;
+    text-align: start;
   }
 
   #name, #email, #number, #dropdown, fieldset, textarea {
