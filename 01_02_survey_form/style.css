@@ -1,4 +1,4 @@
-.body-container {
+body {
   /*
     Compound Color Scheme (Split Complementary)
   */
@@ -7,16 +7,15 @@
   --red:         #9D0E01;
   --blue-light:  #347B98;
   --blue-dark:   #092834;
+
+
+  font-family: "Muli", sans-serif;
+  background-color: var(--green-dark, white);
+  margin: 4vh 10vw;
 }
 
 .center-text {
   text-align: center;
-}
-
-body {
-  font-family: "Muli", sans-serif;
-  background-color: var(--green-dark, white);
-  margin: 4vh 10vw;
 }
 
 #title {
