@@ -1,0 +1,9 @@
+#nav-bar {
+  display: flex;
+}
+
+@media screen and (max-width: 540px) {
+  .todo {
+    /* TODO */
+  }
+}
