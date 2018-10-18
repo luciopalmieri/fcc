@@ -1,5 +1,31 @@
-#nav-bar {
+header {
   display: flex;
+  align-items: center;
+}
+
+#header-img {
+  width: 20%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#see_in_action {
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  width: 480px;
+  height: 360px;
+}
+
+#pricing {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 540px) {
