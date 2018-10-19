@@ -5,23 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wushu Weapons</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
 <header id="header">
-  <img id="header-img" src="https://github.com/luciopalmieri/freeCodeCamp/raw/master/01_03_product_landing_page/wushu_weapons_logo.png" alt="">
   <nav id="nav-bar">
-    <a class="nav-link" href="#features">Features</a>
-    <a class="nav-link" href="#see_in_action">See In Action</a>
-    <a class="nav-link" href="#pricing">Pricing</a>
+    <ul>
+      <li>
+        <a class="nav-link" href="#form"><img id="header-img" src="https://github.com/luciopalmieri/freeCodeCamp/raw/master/01_03_product_landing_page/wushu_weapons_logo.png" alt="Wushu Weapons"></a>
+      </li>
+      <li>
+        <a class="nav-link" href="#features">Features</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#see_in_action">See In Action</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#pricing">Pricing</a>
+      </li>
+    </ul>
   </nav>
 </header>
 
 <main>
-  <h1>Buy Traditional Chinese Weapons</h1>
-
+  <h2 class="text-center">Buy Traditional Chinese Weapons</h2>
   <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
     <label for="email">Email</label>
     <input id="email" type="email" name="email" required placeholder="Enter your email address">
@@ -29,7 +39,18 @@
   </form>
 
   <section id="features">
-
+    <div class="feature">
+      <div class="feature-name">Premium Materials</div>
+      <div class="feature-info">...</div>
+    </div>
+    <div class="feature">
+      <div class="feature-name">Multiple payment options (Credit card, PayPal, PO, Terms, ...)</div>
+      <div class="feature-info">...</div>
+    </div>
+    <div class="feature">
+      <div class="feature-name">Fast Shipping</div>
+      <div class="feature-info">...</div>
+    </div>
   </section>
 
   <section id="see_in_action">
@@ -38,8 +59,8 @@
   </section>
 
   <section id="pricing">
-    <div id="broadsword">
-      <div>Broadsword</div>
+    <div class="product">
+      <div class="product-name">Broadsword</div>
       <div class="product-price">$128</div>
       <ul class="product-description">
         <li>Standard Chinese broadsword with red nylon coloured scarves</li>
@@ -47,8 +68,8 @@
         <li>It comes with a wood scabbard</li>
       </ul>
     </div>
-    <div id="nunchaku">
-      <div>Nunchaku</div>
+    <div class="product">
+      <div class="product-name">Nunchaku</div>
       <div class="product-price">$19</div>
       <ul class="product-description">
         <li>Lorem ipsum dolor sit amet</li>
@@ -56,8 +77,8 @@
         <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
       </ul>
     </div>
-    <div id="escrima">
-      <div>Escrima</div>
+    <div class="product">
+      <div class="product-name">Escrima</div>
       <div class="product-price">$37</div>
       <ul class="product-description">
         <li>Ut enim ad minim veniam</li>
@@ -73,6 +94,6 @@
 </footer>
 
 <!-- CDN Link: Freecodecamp Test Environment -->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!--script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script-->
 </body>
 </html>
