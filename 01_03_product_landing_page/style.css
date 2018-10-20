@@ -1,3 +1,7 @@
+.text-center {
+  text-align: center;
+}
+
 body {
   /*
     Compound Color Scheme (Split Complementary)
@@ -12,13 +16,6 @@ body {
   margin: 0px;
 }
 
-.text-center {
-  text-align: center;
-}
-
-header {
-}
-
 #nav-bar {
   position: fixed;
   top: 0px;
@@ -30,7 +27,7 @@ header {
 
 #nav-bar ul {
   list-style-type: none;
-  margin: 0px;
+  margin: 0px 30px;
   padding: 0px;
 
   display: flex;
@@ -38,9 +35,10 @@ header {
 }
 
 #nav-bar a {
-  margin: 10px;
+  margin: 15px;
   text-decoration: none;
   display: block;
+  color: var(--black, black);
 }
 
 #nav-bar li:first-child {
@@ -52,7 +50,7 @@ header {
 }
 
 main {
-  padding: 16px;
+  padding: 30px;
   margin-top: 30px;
   background-color: var(--black, black);
   color: var(--yellow-light, lightyellow);
@@ -64,8 +62,56 @@ main {
   align-items: center;
 }
 
+#email-container {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+#email-container label {
+  margin: 5px;
+}
+
+#email-container input {
+  margin: 5px;
+  width: 100%;
+  height: 20px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  max-width: 120px;
+  border: 0px;
+  height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: var(--violet, lightyellow);
+  color: var(--yellow-light, black);
+}
+
+#features {
+  display: flex;
+  flex-direction: column;
+  margin: 60px 160px;
+}
+
+.feature {
+  display: flex;
+}
+
+.feature-icon {
+  color: var(--violet, lightyellow);
+  font-size: 45px;
+  margin-right: 20px;
+}
+
+.feature-info h3 {
+  color: var(--yellow-dark, lightyellow);
+}
+
 #see_in_action {
-  margin: 15px;
+  margin: 60px;
   display: flex;
   justify-content: center;
 }
@@ -96,9 +142,13 @@ main {
 }
 
 .product-price {
-  margin: 4px;
+  margin: 8px;
   text-align: center;
   color: var(--yellow-dark, lightyellow);
+}
+
+.product-description {
+  margin: 8px;
 }
 
 @media screen and (max-width: 540px) {

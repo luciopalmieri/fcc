@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wushu Weapons</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/solid.css" integrity="sha384-osqezT+30O6N/vsMqwW8Ch6wKlMofqueuia2H7fePy42uC05rm1G+BUPSd2iBSJL" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/fontawesome.css" integrity="sha384-BzCy2fixOYd0HObpx3GMefNqdbA7Qjcc91RgYeDjrHTIEXqiF00jKvgQG0+zY/7I" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -15,7 +17,7 @@
   <nav id="nav-bar">
     <ul>
       <li>
-        <a class="nav-link" href="#form"><img id="header-img" src="https://github.com/luciopalmieri/freeCodeCamp/raw/master/01_03_product_landing_page/wushu_weapons_logo.png" alt="Wushu Weapons"></a>
+        <a href="#form"><img id="header-img" src="https://github.com/luciopalmieri/freeCodeCamp/raw/master/01_03_product_landing_page/wushu_weapons_logo.png" alt="Wushu Weapons"></a>
       </li>
       <li>
         <a class="nav-link" href="#features">Features</a>
@@ -32,24 +34,42 @@
 
 <main>
   <h2 class="text-center">Buy Traditional Chinese Weapons</h2>
+
   <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-    <label for="email">Email</label>
-    <input id="email" type="email" name="email" required placeholder="Enter your email address">
+    <div id="email-container">
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required placeholder="Enter your email address">
+    </div>
     <input id="submit" type="submit" value="Get Started">
   </form>
 
   <section id="features">
     <div class="feature">
-      <div class="feature-name">Premium Materials</div>
-      <div class="feature-info">...</div>
+      <div class="feature-icon">
+        <i class="fas fa-cube"></i>
+      </div>
+      <div class="feature-info">
+        <h3>Premium Materials</h3>
+        <p>Our weapons are forged with top quality materials to ensure a long life and amazing performance in their use.</p>
+      </div>
     </div>
     <div class="feature">
-      <div class="feature-name">Multiple payment options (Credit card, PayPal, PO, Terms, ...)</div>
-      <div class="feature-info">...</div>
+      <div class="feature-icon">
+        <i class="fas fa-credit-card"></i>
+      </div>
+      <div class="feature-info">
+        <h3>Multiple payment options</h3>
+        <p>La nostra piattaforma supporta i principali circuiti di pagamento per le carte di credito e supporta anche PayPal.</p>
+      </div>
     </div>
     <div class="feature">
-      <div class="feature-name">Fast Shipping</div>
-      <div class="feature-info">...</div>
+      <div class="feature-icon">
+        <i class="fas fa-shipping-fast"></i>
+      </div>
+      <div class="feature-info">
+        <h3>Fast Shipping</h3>
+        <p>Our deliveries are very fast and safe.</p>
+      </div>
     </div>
   </section>
 
@@ -89,8 +109,8 @@
   </section>
 </main>
 
-<footer>
-
+<footer class="text-center">
+  <p>&copy; 2018 <a target="_blank" href="https://www.freecodecamp.org/luciopalmieri">Lucio Palmieri</a></p>
 </footer>
 
 <!-- CDN Link: Freecodecamp Test Environment -->
