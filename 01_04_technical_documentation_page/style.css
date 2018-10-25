@@ -9,7 +9,6 @@ body {
   grid-template-areas:
     "nav-header main"
     "nav        main";
-  grid-gap: 10px;
   margin: 0px;
   background-color: var(--paper-sepia, floralwhite);
   font-family: "Rosario", "Trebuchet MS", sans-serif;
@@ -26,6 +25,8 @@ body {
 
 #navbar {
   grid-area: nav;
+  border-top: 1px solid;
+  border-left: 1px solid;
   border-right: 1px solid;
 }
 
@@ -33,6 +34,13 @@ body {
   grid-area: nav-header;
   z-index: 999;
   text-align: center;
+  background-color: var(--paper-sepia-dark, lightgray);
+  margin: 0px;
+  padding: 15px 10px;
+}
+
+#navbar header h1 {
+  margin: 0px;
 }
 
 #navbar ul {
@@ -41,12 +49,13 @@ body {
   list-style-type: none;
   padding: 0px;
   border-top: 1px solid;
+  margin: 0px;
 }
 
 #navbar li {
   border-bottom: 1px solid;
   margin: 0px;
-  padding: 0px;
+  padding: 0px 10px;
 }
 
 #navbar a {
@@ -55,7 +64,7 @@ body {
 }
 
 #navbar h2 {
-  margin-left: 10px;
+  margin: 10px;
 }
 
 @media screen and (max-width: 600px) {
@@ -66,14 +75,34 @@ body {
 
 #main-doc {
   grid-area: main;
+  margin: 20px;
   overflow: scroll;
   height: 100vh;
 }
 
+#main-doc p {
+  text-align: justify;
+}
+
 @media screen and (max-width: 600px) {
   #main-doc {
+    margin: 10px;
     overflow: unset;
   }
 }
 
+code {
+  display: block;
+  font-family: monospace;
+  line-height: 2;
+  background-color: var(--paper-sepia-dark, lightgray);
+  padding: 15px;
+  margin: 15px;
+  border-radius: 5px;
+}
 
+@media screen and (max-width: 600px) {
+  code {
+    margin: 5px;
+  }
+}
