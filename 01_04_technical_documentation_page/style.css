@@ -94,10 +94,11 @@ body {
 code {
   display: block;
   font-family: monospace;
+  white-space: pre;
   line-height: 2;
   background-color: var(--paper-sepia-dark, lightgray);
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 10px;
   border-radius: 5px;
 }
 
