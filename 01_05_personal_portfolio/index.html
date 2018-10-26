@@ -10,7 +10,7 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-inverse">
+  <nav id="navbar" class="navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#s1">L.Palmieri</a>
@@ -27,7 +27,7 @@
 
 <main>
   <div id="fullpage">
-    <div class="section">
+    <section id="welcome-section" class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
@@ -44,33 +44,69 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="section">
+    </section>
+    <section id="projects" class="section">
       <div class="container">
         <h1>Web Developer Portfolio</h1>
         <div class="thumbs text-center">
+          <div class="project-box">
+          <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/luciopalmieri/freeCodeCamp/master/_screenshot/out/personal_portfolio.jpg"
                class="img-thumbnail"
                alt="A picture of Personal Portfolio Project"/>
+          <div class="project-title">Personal Portfolio</div>
+          </a>
+          </div>
+
+          <div class="project-box">
+          <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/luciopalmieri/freeCodeCamp/master/_screenshot/out/ip_man_tribute_page.jpg"
                class="img-thumbnail"
                alt="A picture of Tribute Page Project"/>
+          <div class="project-title">Tribute Page</div>
+          </a>
+          </div>
+
+          <div class="project-box">
+          <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/luciopalmieri/freeCodeCamp/master/_screenshot/out/random_quote_machine.jpg"
                class="img-thumbnail"
                alt="A picture of Random Quote Machine Project"/>
+          <div class="project-title">Random Quote Machine</div>
+          </a>
+          </div>
+
+          <div class="project-box">
+          <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/luciopalmieri/freeCodeCamp/master/_screenshot/out/local_weather.jpg"
                class="img-thumbnail"
                alt="A picture of Local Weather Project"/>
+          <div class="project-title">Local Weather</div>
+          </a>
+          </div>
+
+          <div class="project-box">
+          <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/luciopalmieri/freeCodeCamp/master/_screenshot/out/wikipedia_viewer.jpg"
                class="img-thumbnail"
                alt="A picture of Wikipedia Viewer Project"/>
+          <div class="project-title">Wikipedia Viewer</div>
+          </a>
+          </div>
+
+          <div class="project-box">
+          <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/luciopalmieri/freeCodeCamp/master/_screenshot/out/twitch_streamers.jpg"
                class="img-thumbnail"
                alt="A picture of Twitch Streamers Project"/>
+            <div class="project-title">Twitch Streamers</div>
+          </a>
+          </div>
+
         </div>
       </div>
-    </div>
-    <div class="section">
+    </section>
+    <section class="section">
       <div class="slide active">
         <div class="container">
           <h1>PromoQui Spa</h1>
@@ -126,8 +162,8 @@
           <h3>Oct 2000 – Aug 2001 (Naples Area, Italy)</h3>
         </div>
       </div>
-    </div>
-    <div class="section">
+    </section>
+    <section class="section">
       <div class="container">
         <div class="intro">
           <h1>Contact me</h1>
@@ -138,6 +174,8 @@
               <li><a href="mailto:lucio.palmieri@gmail.com"><i class="fa fa-envelope"></i> Mail</a></li>
               <li><a href="https://www.linkedin.com/in/luciopalmieri/" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
               <li><a href="https://github.com/luciopalmieri" target="_blank"><i class="fa fa-github"></i> GitHub</a></li>
+              <li><a href="https://www.freecodecamp.org/luciopalmieri" id="profile-link" target="_blank"><i class="fa fa-free-code-camp"></i> freeCodeCamp</a></li>
+              <li><a href="https://codepen.io/cius/" target="_blank"><i class="fa fa-codepen"></i> CodePen</a></li>
               <li><a href="https://twitter.com/lucio_palmieri" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
               <li><a href="https://www.instagram.com/lucio.palmieri/" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
               <li><a href="skype:luciopalmieri?call"><i class="fa fa-skype"></i> Skype</a></li>
@@ -145,7 +183,7 @@
           </address>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </main>
 <footer>
@@ -154,6 +192,10 @@
       <i class="fa fa-linkedin"></i></a>
     <a href="https://github.com/luciopalmieri" target="_blank">
       <i class="fa fa-github"></i></a>
+    <a href="https://www.freecodecamp.org/luciopalmieri" target="_blank">
+      <i class="fa fa-free-code-camp"></i></a>
+    <a href="https://codepen.io/cius/" target="_blank">
+      <i class="fa fa-codepen"></i></a>
     <a href="https://twitter.com/lucio_palmieri" target="_blank">
       <i class="fa fa-twitter"></i></a>
     <a href="https://www.instagram.com/lucio.palmieri/" target="_blank">
@@ -170,5 +212,8 @@
 <script src="https://use.fontawesome.com/434915e07f.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="main.js"></script>
+
+<!-- CDN Link: Freecodecamp Test Environment -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

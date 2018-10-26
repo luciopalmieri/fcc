@@ -16,7 +16,7 @@ a {
 }
 
 /* Header */
-.navbar {
+#navbar {
   position: fixed;
   top: 0px;
   left: 0px;
@@ -36,6 +36,19 @@ a {
 
 .img-profile {
   margin: auto;
+}
+
+#projects {
+}
+
+.project-box {
+  display: inline-block;
+  border: solid 1px;
+  margin: 6px;
+}
+
+.project-title {
+  font-size: 14px;
 }
 
 #fullpage {
