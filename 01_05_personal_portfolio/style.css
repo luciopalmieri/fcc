@@ -47,6 +47,33 @@ a {
   margin: 6px;
 }
 
+@media screen and (max-width: 768px) {
+  .project-box {
+    display: block;
+  }
+
+  a {
+    font-size: 15px;
+  }
+
+  /* avoid navbar collapse */
+  .navbar-collapse.collapse {
+    display: block!important;
+  }
+
+  .navbar-nav>li, .navbar-nav {
+    float: left !important;
+  }
+
+  .navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+  }
+
+  .navbar-right {
+    float: right!important;
+  }
+}
+
 .project-title {
   font-size: 14px;
 }
